@@ -8,7 +8,7 @@ I design circuits and study the systems they power. My work spans analog and mix
 
 I am advised by [Prof. Ning Weng](https://scholar.google.com/citations?user=G8ol4PwAAAAJ&hl=en).
 
-📧 c.ngari@siu.edu &nbsp;|&nbsp; [GitHub](https://github.com/crisphinen) &nbsp;|&nbsp; [Google Scholar](#) &nbsp;|&nbsp; [CV](/Crisphine_Resume.pdf)
+📧 c.ngari@siu.edu &nbsp;|&nbsp; [GitHub](https://github.com/crisphinen) &nbsp;|&nbsp; [Google Scholar](#) &nbsp;|&nbsp; [CV](Crisphine_Resume.pdf)
 
 ---
 
