@@ -1,4 +1,4 @@
-{{ $dest := .Destination | relURL | safeURL }}
+{{ $dest := .Destination | absURL }}
 {{ $newTab := or (hasPrefix .Destination "http://") (hasPrefix .Destination "https://") (hasSuffix .Destination ".pdf") }}
 <a href="{{ $dest }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $newTab }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>
 
