@@ -1,0 +1,36 @@
+<svg width="400" height="240" xmlns="http://www.w3.org/2000/svg" font-family="monospace">
+  <rect width="400" height="240" fill="#f8f8f8" stroke="#ddd" stroke-width="1" rx="4"/>
+
+  <!-- CBM box -->
+  <rect x="30" y="50" width="140" height="60" fill="#fff" stroke="#aaa" stroke-width="1.5" rx="3"/>
+  <text x="100" y="76" text-anchor="middle" font-size="12" fill="#555">Concept</text>
+  <text x="100" y="92" text-anchor="middle" font-size="12" fill="#555">Bottleneck Model</text>
+
+  <!-- NeSy box -->
+  <rect x="230" y="50" width="140" height="60" fill="#fff" stroke="#aaa" stroke-width="1.5" rx="3"/>
+  <text x="300" y="76" text-anchor="middle" font-size="12" fill="#555">NeSy-NIDS</text>
+  <text x="300" y="92" text-anchor="middle" font-size="12" fill="#555">Rule Layer</text>
+
+  <!-- Shared input -->
+  <rect x="150" y="10" width="100" height="30" fill="#e8e8e8" stroke="#aaa" stroke-width="1" rx="3"/>
+  <text x="200" y="30" text-anchor="middle" font-size="11" fill="#555">IoT Traffic</text>
+  <line x1="200" y1="40" x2="100" y2="50" stroke="#999" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="200" y1="40" x2="300" y2="50" stroke="#999" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <!-- Mahalanobis -->
+  <rect x="110" y="140" width="180" height="35" fill="#fff" stroke="#aaa" stroke-width="1.5" rx="3"/>
+  <text x="200" y="163" text-anchor="middle" font-size="11" fill="#555">Mahalanobis OOD Scoring</text>
+  <line x1="100" y1="110" x2="165" y2="140" stroke="#999" stroke-width="1.2"/>
+  <line x1="300" y1="110" x2="235" y2="140" stroke="#999" stroke-width="1.2"/>
+
+  <!-- Output -->
+  <rect x="150" y="200" width="100" height="28" fill="#e8e8e8" stroke="#aaa" stroke-width="1" rx="3"/>
+  <text x="200" y="219" text-anchor="middle" font-size="11" fill="#555">OOD Score</text>
+  <line x1="200" y1="175" x2="200" y2="200" stroke="#999" stroke-width="1.2"/>
+
+  <defs>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#999"/>
+    </marker>
+  </defs>
+</svg>
