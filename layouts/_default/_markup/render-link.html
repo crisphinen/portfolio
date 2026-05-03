@@ -1,4 +1,9 @@
-{{ $dest := .Destination | absURL }}
-{{ $newTab := or (hasPrefix .Destination "http://") (hasPrefix .Destination "https://") (hasSuffix .Destination ".pdf") }}
+{{ $dest := .Destination }}
+{{ $isExternal := or (hasPrefix $dest "http://") (hasPrefix $dest "https://") }}
+{{ if and (not $isExternal) (hasPrefix $dest "/") }}
+  {{ $dest = strings.TrimPrefix "/" $dest }}
+{{ end }}
+{{ $dest = $dest | absURL }}
+{{ $newTab := or $isExternal (hasSuffix .Destination ".pdf") }}
 <a href="{{ $dest }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $newTab }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>
 
