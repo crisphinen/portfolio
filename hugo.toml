@@ -1,0 +1,32 @@
+baseURL = "https://crisphinen.github.io/portfolio/"
+locale = "en-us"
+title = "Ngari Crisphine"
+theme = "researcher"
+paginate = 3
+
+[params]
+  name = "Ngari Crisphine"
+  description = "MSc Student · Electrical and Computer Engineering · SIU Carbondale"
+  mathjax = false
+  email = "c.ngari@siu.edu"
+  github = "crisphinen"
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 1
+
+[[menu.main]]
+  name = "Research"
+  url = "/research/"
+  weight = 2
+
+[[menu.main]]
+  name = "Publications"
+  url = "/publication"
+  weight = 3
+
+[[menu.main]]
+  name = "Teaching"
+  url = "/teaching/"
+  weight = 4
