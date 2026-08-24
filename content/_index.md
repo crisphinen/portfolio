@@ -2,13 +2,11 @@
 title: "Ngari Crisphine"
 ---
 
-**MSc Student · Department of Electrical and Computer Engineering · Southern Illinois University Carbondale**
+{{< profile-header >}}
 
 I work on circuit design and on the security of the systems those circuits run. Most of my time goes to analog and mixed-signal VLSI, digital VLSI, and programmable ASICs. More recently I have been working on hardware security, machine learning, and what happens when LLM agents are given control of real systems.
 
 I am advised by [Prof. Ning Weng](https://scholar.google.com/citations?user=G8ol4PwAAAAJ&hl=en).
-
-📧 c.ngari@siu.edu &nbsp;·&nbsp; [GitHub](https://github.com/crisphinen) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/crisphine-ngari-a73016204/) &nbsp;·&nbsp; [ORCID](https://orcid.org/0009-0005-7834-5521) &nbsp;·&nbsp; [CV](Crisphine_Resume.pdf)
 
 ---
 
