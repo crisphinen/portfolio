@@ -99,3 +99,11 @@
   .header-links { font-size: 0.88rem; }
   .header-links .sep { margin: 0 0.3em; }
 }
+
+/* The theme's stacked navbar leaves no gap between menu items on phones */
+@media (max-width: 575.98px) {
+  .navbar-nav .nav-link {
+    padding-left: 0.45rem;
+    padding-right: 0.45rem;
+  }
+}
