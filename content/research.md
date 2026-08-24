@@ -2,7 +2,7 @@
 title: "Research"
 ---
 
-I design circuits and study the systems they power. My work spans analog and mixed-signal design, digital VLSI, and wireless communication, with a growing focus on the security of IoT hardware and machine learning.
+I design circuits and study the systems they power. My work spans analog and mixed-signal design and digital VLSI, with a growing focus on the security of IoT hardware and machine learning.
 
 **Research interests:** Analog circuit design · Digital VLSI design · Mixed-signal VLSI design · Semiconductor devices · Hardware and IoT security · LLM agent security · Machine learning
 

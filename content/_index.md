@@ -4,7 +4,7 @@ title: "Ngari Crisphine"
 
 **MSc Student · Department of Electrical and Computer Engineering · Southern Illinois University Carbondale**
 
-I design circuits and study the systems they power. My work spans analog and mixed-signal design, digital VLSI, and wireless communication, with a growing focus on the security of IoT hardware and machine learning.
+I design circuits and study the systems they power. My work spans analog and mixed-signal design and digital VLSI, with a growing focus on the security of IoT hardware and machine learning.
 
 I am advised by [Prof. Ning Weng](https://scholar.google.com/citations?user=G8ol4PwAAAAJ&hl=en).
 
