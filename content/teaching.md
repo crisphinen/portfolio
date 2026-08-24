@@ -10,9 +10,11 @@ I hold a **Graduate Assistantship** in the Department of Electrical and Computer
 
 **ECE 433 — Networking** *(Fall 2025)*  
 Southern Illinois University Carbondale  
+Assignment grading and student support
 
 **ECE 513 — Digital VLSI Design** *(Spring 2026)*  
 Southern Illinois University Carbondale  
+Lab instruction, grading, and office hours
 
 **ECE 508 — Computer System Security** *(Fall 2026)*  
 Southern Illinois University Carbondale  
