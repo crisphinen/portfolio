@@ -18,6 +18,9 @@ I am advised by [Prof. Ning Weng](https://scholar.google.com/citations?user=G8ol
 
 ## Recent Publications
 
+**Corroborating Telemetry: Resilient LLM-Driven Network Operations at the Cyber Tactical Edge** *(under review)*  
+**N. C. Macharia**, N. Weng
+
 **Evaluation of Concept-Based Interpretability and Neuro-Symbolic Out-of-Distribution Detection** *(under review)*  
 **N. C. Macharia**, N. Weng, N. Yang
 
