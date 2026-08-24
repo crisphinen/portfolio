@@ -8,7 +8,7 @@ title: "Publications"
 **N. C. Macharia**, N. Weng  
 *Under review · 2026*
 
-**Evaluation of Concept-Based Interpretability and Neuro-Symbolic Out-of-Distribution Detection**  
+**Towards Trustworthy IoT Network Security: Concept Bottlenecks and Differentiable Rules for Interpretable Open-Set Intrusion Detection**  
 **N. C. Macharia**, N. Weng  
 *Under review · 2026*
 
