@@ -15,4 +15,5 @@ Southern Illinois University Carbondale
 Southern Illinois University Carbondale  
 
 **ECE 508 — Computer System Security** *(Fall 2026)*  
-Southern Illinois University Carbondale
+Southern Illinois University Carbondale  
+Assignment grading, homework support, and assisting with lectures
