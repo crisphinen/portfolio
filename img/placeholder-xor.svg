@@ -1,0 +1,52 @@
+<svg width="400" height="240" xmlns="http://www.w3.org/2000/svg" font-family="monospace">
+  <rect width="400" height="240" fill="#f8f8f8" stroke="#ddd" stroke-width="1" rx="4"/>
+  <text x="200" y="22" text-anchor="middle" font-size="11" fill="#888">2-Input CMOS XOR — 45nm Layout</text>
+
+  <!-- Schematic side (left) -->
+  <text x="100" y="45" text-anchor="middle" font-size="10" fill="#aaa">Schematic</text>
+
+  <!-- PMOS network top -->
+  <rect x="60" y="55" width="30" height="45" fill="#dde8ff" stroke="#666" stroke-width="1.2" rx="2"/>
+  <text x="75" y="82" text-anchor="middle" font-size="9" fill="#333">P1</text>
+  <rect x="110" y="55" width="30" height="45" fill="#dde8ff" stroke="#666" stroke-width="1.2" rx="2"/>
+  <text x="125" y="82" text-anchor="middle" font-size="9" fill="#333">P2</text>
+
+  <!-- NMOS network bottom -->
+  <rect x="60" y="130" width="30" height="45" fill="#ffe8dd" stroke="#666" stroke-width="1.2" rx="2"/>
+  <text x="75" y="157" text-anchor="middle" font-size="9" fill="#333">N1</text>
+  <rect x="110" y="130" width="30" height="45" fill="#ffe8dd" stroke="#666" stroke-width="1.2" rx="2"/>
+  <text x="125" y="157" text-anchor="middle" font-size="9" fill="#333">N2</text>
+
+  <!-- VDD / GND -->
+  <line x1="75" y1="50" x2="75" y2="55" stroke="#333" stroke-width="1.2"/>
+  <text x="75" y="47" text-anchor="middle" font-size="9" fill="#333">VDD</text>
+  <line x1="75" y1="175" x2="75" y2="185" stroke="#333" stroke-width="1.2"/>
+  <text x="75" y="196" text-anchor="middle" font-size="9" fill="#333">GND</text>
+
+  <!-- Output -->
+  <line x1="140" y1="115" x2="170" y2="115" stroke="#333" stroke-width="1.2"/>
+  <text x="175" y="119" font-size="9" fill="#333">OUT</text>
+
+  <!-- Divider -->
+  <line x1="210" y1="35" x2="210" y2="220" stroke="#ddd" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Layout side (right) -->
+  <text x="305" y="45" text-anchor="middle" font-size="10" fill="#aaa">Physical Layout</text>
+
+  <!-- Metal layers simulation -->
+  <rect x="225" y="55" width="155" height="155" fill="#f0f0f0" stroke="#ccc" stroke-width="1"/>
+  <!-- poly lines -->
+  <rect x="240" y="70" width="8" height="120" fill="#c8a000" opacity="0.7"/>
+  <rect x="270" y="70" width="8" height="120" fill="#c8a000" opacity="0.7"/>
+  <rect x="300" y="70" width="8" height="120" fill="#c8a000" opacity="0.7"/>
+  <rect x="330" y="70" width="8" height="120" fill="#c8a000" opacity="0.7"/>
+  <!-- diffusion -->
+  <rect x="235" y="80" width="140" height="30" fill="#80c080" opacity="0.5"/>
+  <rect x="235" y="155" width="140" height="30" fill="#c08080" opacity="0.5"/>
+  <!-- metal1 -->
+  <rect x="235" y="120" width="140" height="8" fill="#6699cc" opacity="0.7"/>
+
+  <!-- DRC badge -->
+  <rect x="295" y="195" width="80" height="18" fill="#d4edda" stroke="#28a745" stroke-width="1" rx="2"/>
+  <text x="335" y="208" text-anchor="middle" font-size="9" fill="#155724">DRC/LVS ✓</text>
+</svg>

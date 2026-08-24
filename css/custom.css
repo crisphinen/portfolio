@@ -1,0 +1,109 @@
+.project-entry {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin: 1rem 0 2.5rem;
+}
+
+.project-entry .project-text {
+  flex: 3;
+  min-width: 0;
+}
+
+.project-entry .project-text h3 {
+  margin-top: 0;
+}
+
+.project-entry .project-fig {
+  flex: 2;
+  min-width: 0;
+  margin: 0;
+}
+
+.project-entry .project-fig img {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.project-entry .project-fig figcaption {
+  font-size: 0.78rem;
+  color: #888;
+  margin-top: 0.4rem;
+  text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .project-entry {
+    flex-direction: column;
+  }
+}
+
+/* Lightbox */
+.project-fig img {
+  cursor: zoom-in;
+}
+
+#lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+#lightbox-overlay.active {
+  display: flex;
+}
+
+#lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 4px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.6);
+  cursor: zoom-out;
+}
+
+#lightbox-close {
+  position: fixed;
+  top: 1rem;
+  right: 1.25rem;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  opacity: 0.8;
+}
+
+#lightbox-close:hover {
+  opacity: 1;
+}
+
+/* Contact links embedded in the site header */
+.header-links {
+  text-align: center;
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+}
+.header-links .sep {
+  margin: 0 0.45em;
+  opacity: 0.55;
+}
+@media (max-width: 480px) {
+  .header-links { font-size: 0.88rem; }
+  .header-links .sep { margin: 0 0.3em; }
+}
+
+/* The theme's stacked navbar leaves no gap between menu items on phones */
+@media (max-width: 575.98px) {
+  .navbar-nav .nav-link {
+    padding-left: 0.45rem;
+    padding-right: 0.45rem;
+  }
+}

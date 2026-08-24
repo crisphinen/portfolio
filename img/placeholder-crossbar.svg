@@ -1,0 +1,52 @@
+<svg width="400" height="240" xmlns="http://www.w3.org/2000/svg" font-family="monospace">
+  <rect width="400" height="240" fill="#f8f8f8" stroke="#ddd" stroke-width="1" rx="4"/>
+
+  <!-- Title -->
+  <text x="200" y="22" text-anchor="middle" font-size="11" fill="#888">3×3 Crossbar Array (1D1R)</text>
+
+  <!-- Column lines -->
+  <line x1="130" y1="35" x2="130" y2="195" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="200" y1="35" x2="200" y2="195" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="270" y1="35" x2="270" y2="195" stroke="#aaa" stroke-width="1.5"/>
+
+  <!-- Row lines -->
+  <line x1="80" y1="80" x2="320" y2="80" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="80" y1="130" x2="320" y2="130" stroke="#aaa" stroke-width="1.5"/>
+  <line x1="80" y1="180" x2="320" y2="180" stroke="#aaa" stroke-width="1.5"/>
+
+  <!-- 1D1R cells at intersections: diode + resistor symbol -->
+  <!-- Row1 -->
+  <circle cx="130" cy="80" r="7" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <text x="130" y="84" text-anchor="middle" font-size="8" fill="#555">D</text>
+  <circle cx="200" cy="80" r="7" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <text x="200" y="84" text-anchor="middle" font-size="8" fill="#555">D</text>
+  <circle cx="270" cy="80" r="7" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <text x="270" y="84" text-anchor="middle" font-size="8" fill="#555">D</text>
+  <!-- Row2 -->
+  <circle cx="130" cy="130" r="7" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <text x="130" y="134" text-anchor="middle" font-size="8" fill="#555">D</text>
+  <circle cx="200" cy="130" r="7" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <text x="200" y="134" text-anchor="middle" font-size="8" fill="#555">D</text>
+  <circle cx="270" cy="130" r="7" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <text x="270" y="134" text-anchor="middle" font-size="8" fill="#555">D</text>
+  <!-- Row3 -->
+  <circle cx="130" cy="180" r="7" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <text x="130" y="184" text-anchor="middle" font-size="8" fill="#555">D</text>
+  <circle cx="200" cy="180" r="7" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <text x="200" y="184" text-anchor="middle" font-size="8" fill="#555">D</text>
+  <circle cx="270" cy="180" r="7" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <text x="270" y="184" text-anchor="middle" font-size="8" fill="#555">D</text>
+
+  <!-- Labels -->
+  <text x="50" y="83" text-anchor="middle" font-size="10" fill="#777">R1</text>
+  <text x="50" y="133" text-anchor="middle" font-size="10" fill="#777">R2</text>
+  <text x="50" y="183" text-anchor="middle" font-size="10" fill="#777">R3</text>
+  <text x="130" y="215" text-anchor="middle" font-size="10" fill="#777">C1</text>
+  <text x="200" y="215" text-anchor="middle" font-size="10" fill="#777">C2</text>
+  <text x="270" y="215" text-anchor="middle" font-size="10" fill="#777">C3</text>
+
+  <!-- Error annotation -->
+  <rect x="310" y="65" width="78" height="40" fill="#fff3cd" stroke="#f0ad4e" stroke-width="1" rx="2"/>
+  <text x="349" y="80" text-anchor="middle" font-size="9" fill="#856404">sneak path</text>
+  <text x="349" y="93" text-anchor="middle" font-size="9" fill="#856404">→ mitigated</text>
+</svg>
