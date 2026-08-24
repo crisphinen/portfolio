@@ -2,7 +2,7 @@
 title: "Ngari Crisphine"
 ---
 
-{{< profile-header >}}
+**MSc Student · Department of Electrical and Computer Engineering · Southern Illinois University Carbondale**
 
 I work on circuit design and on the security of the systems those circuits run. Most of my time goes to analog and mixed-signal VLSI, digital VLSI, and programmable ASICs. More recently I have been working on hardware security, machine learning, and what happens when LLM agents are given control of real systems.
 
