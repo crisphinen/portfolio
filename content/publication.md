@@ -2,8 +2,6 @@
 title: "Publications"
 ---
 
----
-
 ### Under Review
 
 **Corroborating Telemetry: Resilient LLM-Driven Network Operations at the Cyber Tactical Edge**  
