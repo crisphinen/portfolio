@@ -11,7 +11,7 @@ title: "Publications"
 *Under review · 2026*
 
 **Evaluation of Concept-Based Interpretability and Neuro-Symbolic Out-of-Distribution Detection**  
-**N. C. Macharia**, N. Weng, N. Yang  
+**N. C. Macharia**, N. Weng  
 *Under review · 2026*
 
 ---
