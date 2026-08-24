@@ -2,7 +2,7 @@
 title: "Research"
 ---
 
-I design circuits and study the systems they power. My work spans analog and mixed-signal design and digital VLSI, with a growing focus on the security of IoT hardware and machine learning.
+I design circuits and study the systems they power. My work spans analog and mixed-signal design, digital VLSI, and programmable ASICs, with a growing focus on hardware and IoT security, LLM agent security, and machine learning.
 
 **Research interests:** Analog circuit design · Digital VLSI design · Mixed-signal VLSI design · Programmable ASIC design · Semiconductor devices · Hardware and IoT security · LLM agent security · Machine learning
 
@@ -12,7 +12,7 @@ I design circuits and study the systems they power. My work spans analog and mix
 
 {{< project-figure src="img/img-telemetry.png" alt="System architecture and threat model for telemetry corroboration" caption="Unauthenticated injection over syslog, SNMP, and gNMI, with L1 provenance and L2 device-state checks before the agent." >}}
 ### Resilient LLM-Driven Network Operations at the Cyber Tactical Edge
-LLM agents that read live telemetry and reconfigure devices inherit the trustworthiness of that telemetry. An adversary who injects a plausible but false diagnosis over unauthenticated syslog, SNMP, or gNMI reaches **100% attack success** across three vectors and three off-policy objectives (route hijack, monitor-disable, ACL deletion), where an equivalent prompt-injection payload succeeds in only 5%, because the agent adopts the supplied diagnosis as a premise rather than as an instruction. Taint-based telemetry sanitization fails structurally here: the message space is open, so a reformatted payload evades it, and masking identity fields collapses root-cause localization from 100% to 0%. **Ground-Truth Corroboration** instead lets the LLM reason freely but forwards a remediation-bearing claim only when a deterministic verifier confirms it against live device state, driving injection-attributable attack success to **0%** at a mean verification latency of 0.18 s. Evaluated on an eight-router, multi-AS topology across six models. *(Under review)*
+LLM agents that read live telemetry and reconfigure devices inherit the trustworthiness of that telemetry. An adversary who injects a plausible but false diagnosis over unauthenticated syslog, SNMP, or gNMI reaches **100% attack success** across three vectors and three off-policy objectives (route hijack, monitor-disable, ACL deletion), whereas an equivalent prompt-injection payload succeeds in only 5%, because the agent adopts the supplied diagnosis as a premise rather than as an instruction. Taint-based telemetry sanitization fails structurally here: the message space is open, so a reformatted payload evades it, and masking identity fields collapses root-cause localization from 100% to 0%. **Ground-Truth Corroboration** instead lets the LLM reason freely but forwards a remediation-bearing claim only when a deterministic verifier confirms it against live device state, driving injection-attributable attack success to **0%** at a mean verification latency of 0.18 s. Evaluated on an eight-router, multi-AS topology across six models. *(Under review)*
 {{< /project-figure >}}
 
 {{< project-figure src="img/img-nids.png" alt="NeSy-CBM architecture diagram" caption="CBM and NeSy-NIDS architectures with Mahalanobis OOD scoring." >}}
