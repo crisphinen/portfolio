@@ -2,7 +2,7 @@
 title: "Research"
 ---
 
-I design circuits and study the systems they power. My research spans analog and mixed-signal VLSI, digital VLSI, programmable ASICs, and semiconductor devices, with a growing focus on hardware security, machine learning, and LLM agents in hardware design and security.
+I work on circuit design and on the security of the systems those circuits run. Most of my time goes to analog and mixed-signal VLSI, digital VLSI, and programmable ASICs. More recently I have been working on hardware security, machine learning, and what happens when LLM agents are given control of real systems.
 
 **Research interests:** Analog circuit design · Mixed-signal VLSI design · Digital VLSI design · Programmable ASIC design · Semiconductor devices · Hardware and IoT security · Machine learning · LLM agents for hardware design · LLM agent security
 
@@ -12,12 +12,12 @@ I design circuits and study the systems they power. My research spans analog and
 
 {{< project-figure src="img/img-telemetry.png" alt="System architecture and threat model for telemetry corroboration" caption="Unauthenticated injection over syslog, SNMP, and gNMI, with L1 provenance and L2 device-state checks before the agent." >}}
 ### Resilient LLM-Driven Network Operations at the Cyber Tactical Edge
-LLM agents that read live telemetry and reconfigure devices inherit the trustworthiness of that telemetry. An adversary who injects a plausible but false diagnosis over unauthenticated syslog, SNMP, or gNMI reaches **100% attack success** across three vectors and three off-policy objectives (route hijack, monitor-disable, ACL deletion), whereas an equivalent prompt-injection payload succeeds in only 5%, because the agent adopts the supplied diagnosis as a premise rather than as an instruction. Taint-based telemetry sanitization fails structurally here: the message space is open, so a reformatted payload evades it, and masking identity fields collapses root-cause localization from 100% to 0%. **Ground-Truth Corroboration** instead lets the LLM reason freely but forwards a remediation-bearing claim only when a deterministic verifier confirms it against live device state, driving injection-attributable attack success to **0%** at a mean verification latency of 0.18 s. Evaluated on an eight-router, multi-AS topology across six models. *(Under review)*
+An LLM agent that reads live telemetry and reconfigures devices is only as reliable as the telemetry it reads. Feed it a false diagnosis over unauthenticated syslog, SNMP, or gNMI and it acts on it every time, against 5% for the same payload written as a direct instruction. Sanitizing the telemetry does not help: masking device identifiers drops root-cause localization from 100% to 0%. Ground-Truth Corroboration checks each remediation-bearing claim against live device state before the agent sees it, which cuts injection-attributable attack success to 0% at about 0.18 s per check. *(Under review)*
 {{< /project-figure >}}
 
 {{< project-figure src="img/img-nids.png" alt="NeSy-CBM architecture diagram" caption="CBM and NeSy-NIDS architectures with Mahalanobis OOD scoring." >}}
 ### Interpretable IoT Intrusion Detection with Open-Set Robustness
-ML-based network intrusion detection systems (NIDS) struggle with interpretability and novel attack families unseen during training. This work jointly evaluates two complementary architectures on IoT traffic classification: **Concept Bottleneck Models (CBMs)**, which route predictions through human-defined traffic concepts and support test-time intervention, and **Neuro-Symbolic NIDS (NeSy-NIDS)**, which encodes domain-expert attack signatures as differentiable threshold rules with learnable parameters. Both use Mahalanobis distance for open-set scoring. Evaluated on CTU-IoT-23 and CIC-IoT-2023, neither method incurs classification accuracy cost (F1 within ±0.0015 of an unconstrained MLP), with NeSy-NIDS achieving OOD AUROC of 0.909 on CTU-IoT-23. *(Under review)*
+Two things go wrong with ML-based intrusion detection: you cannot tell why traffic was flagged, and attack families absent from training go unrecognized. The paper compares two architectures on IoT traffic. Concept Bottleneck Models route predictions through human-defined concepts that can be inspected and corrected at test time; Neuro-Symbolic NIDS writes expert signatures as threshold rules with learnable parameters. Neither costs accuracy on CTU-IoT-23 or CIC-IoT-2023 (F1 within ±0.0015 of a plain MLP), and NeSy-NIDS reaches an OOD AUROC of 0.909. *(Under review)*
 {{< /project-figure >}}
 
 ---
@@ -26,16 +26,16 @@ ML-based network intrusion detection systems (NIDS) struggle with interpretabili
 
 {{< project-figure src="img/img-crossbar.png" alt="1D1R crossbar schematic and simulation result" caption="1D1R diode-modified crossbar schematic with transient simulation confirming sneak path suppression." >}}
 ### Sneak Path Mitigation in a Crossbar-Based AI Accelerator
-Investigated the sneak path problem in resistive memristor crossbar arrays used for in-memory neural network inference. Designed a 1D1R (diode + memristor) cell architecture in Cadence Virtuoso that reduced read error from **3,430% to under 10%**, enabling practical crossbar-based multiply-accumulate operations for edge AI.
+Memristor crossbars used for in-memory inference leak current along unselected paths, which corrupts every read. I built a 1D1R cell, a diode in series with each memristor, in Cadence Virtuoso and brought read error down from **3,430% to under 10%**.
 {{< /project-figure >}}
 
 {{< project-figure src="img/img-xor.png" alt="Full custom CMOS layout in Cadence Virtuoso" caption="Full custom CMOS layout in Cadence Virtuoso, 45nm GPDK45. Zero DRC/LVS violations." >}}
 ### Full-Custom CMOS XOR Gate Layout and Verification
-Designed and verified a 2-input CMOS XOR gate from schematic to physical layout in a 45nm process (GPDK45). Implemented using a complementary pass-transistor topology, achieving zero DRC and LVS violations. Demonstrates the complete RTL-to-GDS design flow in Cadence Virtuoso.
+A 2-input CMOS XOR gate taken from schematic to physical layout in a 45nm process (GPDK45), built on a complementary pass-transistor topology. Clean on both DRC and LVS.
 {{< /project-figure >}}
 
 {{< project-figure src="img/img-localization.png" alt="Wireless localization system architecture" caption="WAP-based fingerprinting pipeline with radio map, classifier, and multi-device message broker." >}}
 ### Wireless Localization on Constrained Hardware
 *(BTech Thesis)*  
-Designed a real-time localization framework for IoT nodes that achieves **99% accuracy** with an average response time of 3 seconds. The system addresses the challenge of self-localization in resource-limited connected devices for applications in asset tracking, indoor navigation, and context-aware services. Published at IEEE CONECCT 2024.
+A localization framework for IoT nodes that locate themselves rather than relying on a server, reaching **99% accuracy** with a 3 second average response time. Published at IEEE CONECCT 2024.
 {{< /project-figure >}}
