@@ -4,7 +4,7 @@ title: "Ngari Crisphine"
 
 **MSc Student · Department of Electrical and Computer Engineering · Southern Illinois University Carbondale**
 
-I design circuits and study the systems they power. My research spans analog and mixed-signal VLSI, digital VLSI, programmable ASICs, and semiconductor devices, with a growing focus on hardware security, machine learning, and LLM agents — how to design with them, and how to secure them.
+I design circuits and study the systems they power. My research spans analog and mixed-signal VLSI, digital VLSI, programmable ASICs, and semiconductor devices, with a growing focus on hardware security, machine learning, and LLM agents in hardware design and security.
 
 I am advised by [Prof. Ning Weng](https://scholar.google.com/citations?user=G8ol4PwAAAAJ&hl=en).
 

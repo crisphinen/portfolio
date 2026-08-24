@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-I am an MSc student in the Department of Electrical and Computer Engineering at Southern Illinois University Carbondale, advised by [Prof. Ning Weng](https://scholar.google.com/citations?user=G8ol4PwAAAAJ&hl=en). I design circuits and study the systems they power. My research spans analog and mixed-signal VLSI, digital VLSI, programmable ASICs, and semiconductor devices, with a growing focus on hardware security, machine learning, and LLM agents — how to design with them, and how to secure them.
+I am an MSc student in the Department of Electrical and Computer Engineering at Southern Illinois University Carbondale, advised by [Prof. Ning Weng](https://scholar.google.com/citations?user=G8ol4PwAAAAJ&hl=en). I design circuits and study the systems they power. My research spans analog and mixed-signal VLSI, digital VLSI, programmable ASICs, and semiconductor devices, with a growing focus on hardware security, machine learning, and LLM agents in hardware design and security.
 
 I hold a Graduate Assistantship in the ECE department, where I also serve as a Teaching Assistant.
 
