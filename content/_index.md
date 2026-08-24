@@ -12,10 +12,6 @@ I am advised by [Prof. Ning Weng](https://scholar.google.com/citations?user=G8ol
 
 ---
 
-## News
-
----
-
 ## Recent Publications
 
 **Corroborating Telemetry: Resilient LLM-Driven Network Operations at the Cyber Tactical Edge** *(under review)*  

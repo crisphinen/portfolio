@@ -20,8 +20,3 @@ Supervisor: Prof. Ning Weng
 GITAM School of Technology, Bangalore, India  
 First Class  
 Thesis: *Wireless Localization on Constrained Hardware*
-
----
-
-## News
-
