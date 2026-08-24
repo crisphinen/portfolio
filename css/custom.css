@@ -46,6 +46,16 @@
 
 /* The theme's stacked navbar leaves no gap between menu items on phones */
 @media (max-width: 575.98px) {
+  /* the theme pins the navbar to one no-wrap row, which overflows narrow
+     screens; let it wrap and keep the items from running together */
+  .navbar.text-nowrap,
+  .navbar .text-nowrap {
+    white-space: normal;
+  }
+  .navbar-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .navbar-nav .nav-link {
     padding-left: 0.45rem;
     padding-right: 0.45rem;
