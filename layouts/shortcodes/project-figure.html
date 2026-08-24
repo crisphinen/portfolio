@@ -1,7 +1,7 @@
 <div class="project-entry">
-  <div class="project-text">{{ .Inner | markdownify }}</div>
   <figure class="project-fig">
     <img src="{{ .Get "src" | absURL }}" alt="{{ .Get "alt" }}">
     {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
   </figure>
+  <div class="project-text">{{ .Inner | markdownify }}</div>
 </div>
