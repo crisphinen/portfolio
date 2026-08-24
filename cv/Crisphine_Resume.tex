@@ -1,0 +1,182 @@
+\documentclass[10.5pt,letterpaper]{article}
+
+\usepackage[margin=0.7in,top=0.6in,bottom=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{-0.6em}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{1.0em}{0.5em}
+
+% \entry{left}{right}
+\newcommand{\entry}[2]{\textbf{#1}\hfill #2\par}
+% \subentry{left}{right}
+\newcommand{\subentry}[2]{\textit{#1}\hfill \textit{#2}\par\vspace{0.15em}}
+
+\setlist[itemize]{leftmargin=1.2em,topsep=0.15em,itemsep=0.1em,parsep=0pt,label=\textbullet}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+  {\LARGE\bfseries Crisphine M. Ngari}\\[0.35em]
+  {\small 516 South Hays Avenue, Carbondale, IL 62901}\\[0.25em]
+  {\small
+    \href{mailto:c.ngari@siu.edu}{c.ngari@siu.edu} \quad$|$\quad
+    +1 618 882 2876 \quad$|$\quad
+    \href{https://github.com/crisphinen}{github.com/crisphinen} \quad$|$\quad
+    \href{https://www.linkedin.com/in/crisphine-ngari-a73016204/}{LinkedIn} \quad$|$\quad
+    \href{https://orcid.org/0009-0005-7834-5521}{ORCID}
+  }
+\end{center}
+\vspace{0.4em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Research Interests}
+Analog circuit design $\cdot$ Mixed-signal VLSI design $\cdot$ Digital VLSI design $\cdot$
+Programmable ASIC design $\cdot$ Semiconductor devices $\cdot$ Hardware and IoT security $\cdot$
+Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent security
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Education}
+\entry{Southern Illinois University Carbondale}{Aug 2025 -- Present}
+\subentry{M.S., Electrical and Computer Engineering \quad GPA: 3.89 / 4.0}{Carbondale, IL}
+\begin{itemize}
+  \item Advisor: Prof.\ Ning Weng
+\end{itemize}
+\vspace{0.35em}
+\entry{GITAM School of Technology}{Sep 2020 -- May 2024}
+\subentry{B.Tech., Electronics and Communication Engineering \quad First Class, GPA: 8.24 / 10}{Bangalore, India}
+\begin{itemize}
+  \item Thesis: Wireless Localization on Constrained Hardware
+  \item Study in India Merit-Based Scholarship (2020--2024)
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Publications}
+\textbf{Under Review}
+\begin{itemize}
+  \item N. C. Macharia, N. Weng. ``Corroborating Telemetry: Resilient LLM-Driven Network
+        Operations at the Cyber Tactical Edge.'' Under review, 2026.
+  \item N. C. Macharia, N. Weng. ``Towards Trustworthy IoT Network Security: Concept Bottlenecks
+        and Differentiable Rules for Interpretable Open-Set Intrusion Detection.'' Under review, 2026.
+\end{itemize}
+\vspace{0.3em}
+\textbf{Conference Papers}
+\begin{itemize}
+  \item E. Asogwa, N. C. Macharia, A. Bajpai, N. Telagam. ``A Framework for Real-Time Localization
+        in Constrained Devices Connected to the IoT.'' In \textit{Proc.\ IEEE International Conference
+        on Electronics, Computing and Communication Technologies (CONECCT)}, 2024.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Research \& Projects}
+\entry{Resilient LLM-Driven Network Operations at the Cyber Tactical Edge}{2025 -- Present}
+\subentry{Southern Illinois University Carbondale}{}
+\begin{itemize}
+  \item Showed that a false diagnosis injected over unauthenticated syslog, SNMP, or gNMI steers an
+        LLM network-operations agent into harmful reconfiguration on every trial, against 5\% for the
+        same payload written as a direct instruction.
+  \item Established that taint-based telemetry sanitization cannot hold: masking device identifiers
+        drops root-cause localization from 100\% to 0\%.
+  \item Built \textit{Ground-Truth Corroboration}, a deterministic verifier that admits a
+        remediation-bearing claim only when live device state confirms it, cutting
+        injection-attributable attack success to 0\% at roughly 0.18 s per check across six models on
+        an eight-router, multi-AS topology.
+\end{itemize}
+\vspace{0.35em}
+\entry{Interpretable IoT Intrusion Detection with Open-Set Robustness}{2025 -- Present}
+\subentry{Southern Illinois University Carbondale}{}
+\begin{itemize}
+  \item Jointly evaluated Concept Bottleneck Models (CBMs) and Neuro-Symbolic NIDS (NeSy-NIDS) on
+        IoT traffic classification using the CTU-IoT-23 and CIC-IoT-2023 datasets.
+  \item Both architectures score open-set inputs by per-class Mahalanobis distance; neither incurs a
+        classification accuracy cost.
+  \item NeSy-NIDS reached an OOD AUROC of 0.906 on CTU-IoT-23 and a moderately regularized JointCBM
+        0.895, both at or above an unconstrained MLP baseline.
+  \item Identified the task-coupling OOD penalty on CIC-IoT-2023, where the degree of coupling between
+        concept learning and the classification task dictates open-set detectability.
+\end{itemize}
+\vspace{0.35em}
+\entry{Sneak Path Mitigation in a Crossbar-Based AI Accelerator}{2024 -- 2025}
+\subentry{Southern Illinois University Carbondale}{}
+\begin{itemize}
+  \item Investigated the sneak path problem in resistive memristor crossbar arrays used for in-memory
+        neural network inference.
+  \item Designed a 1D1R (diode + memristor) cell in Cadence Virtuoso, reducing read error from 3,430\%
+        to under 10\%.
+\end{itemize}
+\vspace{0.35em}
+\entry{Full-Custom CMOS XOR Gate Layout and Verification}{2024 -- 2025}
+\subentry{Southern Illinois University Carbondale}{}
+\begin{itemize}
+  \item Designed a 2-input XOR gate from schematic to physical layout in 45 nm GPDK45 using a
+        complementary pass-transistor topology in Cadence Virtuoso.
+  \item Achieved zero DRC and LVS violations across the full RTL-to-GDS flow.
+\end{itemize}
+\vspace{0.35em}
+\entry{Wireless Localization on Constrained Hardware (B.Tech Thesis)}{Jul 2023 -- Apr 2024}
+\subentry{GITAM School of Technology}{}
+\begin{itemize}
+  \item Designed a real-time Wi-Fi fingerprint localization framework for IoT nodes, achieving 99\%
+        accuracy with an average response time of 3 seconds.
+  \item Addressed self-localization for resource-limited devices in asset tracking and indoor
+        navigation.
+  \item Published at IEEE CONECCT 2024.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Teaching \& Academic Service}
+\entry{Graduate Teaching Assistant --- Southern Illinois University Carbondale}{Aug 2025 -- Present}
+\begin{itemize}
+  \item ECE 508: Computer System Security (Fall 2026)
+  \item ECE 513: Digital VLSI Design (Spring 2026) --- lab instruction, grading, office hours
+  \item ECE 433: Networking (Fall 2025) --- assignment grading and student support
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Professional Experience}
+\entry{Afrotel Group Telecommunication Engineering \quad$|$\quad Network Engineer}{Jun 2024 -- Jul 2025}
+\begin{itemize}
+  \item Installed and maintained LTE, 5G RAN, microwave, and FTTX fiber optic infrastructure.
+  \item Conducted OTDR, CD/PMD, and power meter tests; performed splice quality validation and
+        point-of-break analysis.
+  \item Troubleshot network faults to prevent downtime; managed MPLS data center connectivity.
+\end{itemize}
+\vspace{0.35em}
+\entry{EduSkills Foundation \quad$|$\quad Embedded Systems Intern}{May 2023 -- Jul 2023}
+\begin{itemize}
+  \item Developed and tested embedded hardware/software solutions integrating sensors, actuators, and
+        communication modules.
+  \item Performed circuit-level troubleshooting on resistive, capacitive, and diode components.
+\end{itemize}
+\vspace{0.35em}
+\entry{South Eastern Kenya University \quad$|$\quad ICT Technician}{Sep 2019 -- Feb 2021}
+\begin{itemize}
+  \item Managed network infrastructure, computer labs, and CCTV systems; provided ICT training for
+        students and staff.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Technical Skills}
+\begin{tabular}{@{}p{0.20\textwidth}p{0.76\textwidth}@{}}
+  \textbf{EDA \& Design} & Cadence Virtuoso, SPICE simulation, 45 nm GPDK45 \\
+  \textbf{HDL}           & VHDL, Verilog, FPGA/CPLD \\
+  \textbf{Programming}   & Python, MATLAB, Simulink \\
+  \textbf{Networking}    & LTE/5G, FTTX, MPLS, RSSI/Wi-Fi fingerprinting \\
+  \textbf{Hardware}      & Arduino, Raspberry Pi, NodeMCU \\
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Awards \& Scholarships}
+\begin{itemize}
+  \item Study in India Merit-Based Scholarship (2020--2024)
+\end{itemize}
+
+\end{document}
