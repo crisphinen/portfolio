@@ -50,10 +50,11 @@
      screens; let it wrap and keep the items from running together */
   .navbar.text-nowrap,
   .navbar .text-nowrap {
-    white-space: normal;
+    white-space: normal !important;
   }
-  .navbar-nav {
-    flex-wrap: wrap;
+  .navbar-nav,
+  .navbar-nav.flex-nowrap {
+    flex-wrap: wrap !important;
     justify-content: center;
   }
   .navbar-nav .nav-link {
