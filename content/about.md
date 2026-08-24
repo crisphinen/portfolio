@@ -6,8 +6,6 @@ I am an MSc student in the Department of Electrical and Computer Engineering at 
 
 I hold a Graduate Assistantship in the ECE department and work as a Teaching Assistant.
 
-📧 c.ngari@siu.edu &nbsp;·&nbsp; [GitHub](https://github.com/crisphinen) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/crisphine-ngari-a73016204/) &nbsp;·&nbsp; [ORCID](https://orcid.org/0009-0005-7834-5521) &nbsp;·&nbsp; [CV](Crisphine_Resume.pdf)
-
 ---
 
 ## Education
