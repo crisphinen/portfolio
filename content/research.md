@@ -2,9 +2,9 @@
 title: "Research"
 ---
 
-I design circuits and study the systems they power. My research interests span analog circuit design, mixed-signal VLSI design, digital VLSI design, programmable ASIC design, and semiconductor devices, with a growing focus on hardware security, machine learning, and LLMs for agentic hardware design and security.
+I design circuits and study the systems they power. My research spans analog and mixed-signal VLSI, digital VLSI, programmable ASICs, and semiconductor devices, with a growing focus on hardware security, machine learning, and LLM agents — how to design with them, and how to secure them.
 
-**Research interests:** Analog circuit design · Mixed-signal VLSI design · Digital VLSI design · Programmable ASIC design · Semiconductor devices · Hardware and IoT security · Machine learning · LLMs for agentic hardware design and security
+**Research interests:** Analog circuit design · Mixed-signal VLSI design · Digital VLSI design · Programmable ASIC design · Semiconductor devices · Hardware and IoT security · Machine learning · LLM agents for hardware design · LLM agent security
 
 ---
 
