@@ -1,6 +1,6 @@
 \documentclass[10.5pt,letterpaper]{article}
 
-\usepackage[margin=0.7in,top=0.55in,bottom=0.5in]{geometry}
+\usepackage[margin=0.7in,top=0.5in,bottom=0.45in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{enumitem}
@@ -12,14 +12,14 @@
 \setlength{\parindent}{0pt}
 
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{-0.6em}\rule{\textwidth}{0.6pt}]
-\titlespacing*{\section}{0pt}{1.0em}{0.5em}
+\titlespacing*{\section}{0pt}{0.8em}{0.4em}
 
 % \entry{left}{right}
-\newcommand{\entry}[2]{\textbf{#1}\hfill #2\par}
+\newcommand{\entry}[2]{\filbreak\textbf{#1}\hfill #2\par}
 % \subentry{left}{right}
 \newcommand{\subentry}[2]{\textit{#1}\hfill \textit{#2}\par\vspace{0.15em}}
 
-\setlist[itemize]{leftmargin=1.2em,topsep=0.15em,itemsep=0.1em,parsep=0pt,label=\textbullet}
+\setlist[itemize]{leftmargin=1.2em,topsep=0.1em,itemsep=0.05em,parsep=0pt,label=\textbullet}
 
 \begin{document}
 
@@ -56,7 +56,7 @@ Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent securi
 \begin{itemize}
   \item Advisor: Prof.\ Ning Weng
 \end{itemize}
-\vspace{0.35em}
+\vspace{0.25em}
 \entry{GITAM School of Technology}{Sep 2020 -- May 2024}
 \subentry{B.Tech., Electronics and Communication Engineering \quad First Class, GPA: 8.24 / 10}{Bangalore, India}
 \begin{itemize}
@@ -96,7 +96,7 @@ Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent securi
         injection-attributable attack success to 0\% at roughly 0.18 s per check across six models on
         an eight-router, multi-AS topology.
 \end{itemize}
-\vspace{0.35em}
+\vspace{0.25em}
 \entry{Interpretable IoT Intrusion Detection with Open-Set Robustness}{2025 -- Present}
 \subentry{Southern Illinois University Carbondale}{}
 \begin{itemize}
@@ -109,7 +109,7 @@ Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent securi
   \item Identified the task-coupling OOD penalty on CIC-IoT-2023, where the degree of coupling between
         concept learning and the classification task dictates open-set detectability.
 \end{itemize}
-\vspace{0.35em}
+\vspace{0.25em}
 \entry{Sneak Path Mitigation in a Crossbar-Based AI Accelerator}{2025}
 \subentry{Southern Illinois University Carbondale}{}
 \begin{itemize}
@@ -118,7 +118,7 @@ Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent securi
   \item Designed a 1D1R (diode + memristor) cell in Cadence Virtuoso, reducing read error from 3,430\%
         to under 10\%.
 \end{itemize}
-\vspace{0.35em}
+\vspace{0.25em}
 \entry{Full-Custom CMOS XOR Gate Layout and Verification}{2025}
 \subentry{Southern Illinois University Carbondale}{}
 \begin{itemize}
@@ -126,7 +126,7 @@ Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent securi
         complementary pass-transistor topology in Cadence Virtuoso.
   \item Achieved zero DRC and LVS violations across the full RTL-to-GDS flow.
 \end{itemize}
-\vspace{0.35em}
+\vspace{0.25em}
 \entry{Wireless Localization on Constrained Hardware (B.Tech Thesis)}{Jul 2023 -- Apr 2024}
 \subentry{GITAM School of Technology}{}
 \begin{itemize}
@@ -158,7 +158,7 @@ Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent securi
   \item Maintained and troubleshot instructional technology, devices, software, and classroom
         equipment.
 \end{itemize}
-\vspace{0.35em}
+\vspace{0.25em}
 \entry{Afrotel Group Telecommunication Engineering \quad$|$\quad Network Engineer}{Jun 2024 -- Jul 2025}
 \begin{itemize}
   \item Installed and maintained LTE, 5G RAN, microwave, and FTTX fiber optic infrastructure.
@@ -166,14 +166,14 @@ Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent securi
         point-of-break analysis.
   \item Troubleshot network faults to prevent downtime; managed MPLS data center connectivity.
 \end{itemize}
-\vspace{0.35em}
+\vspace{0.25em}
 \entry{EduSkills Foundation \quad$|$\quad Embedded Systems Intern}{May 2023 -- Jul 2023}
 \begin{itemize}
   \item Developed and tested embedded hardware/software solutions integrating sensors, actuators, and
         communication modules.
   \item Performed circuit-level troubleshooting on resistive, capacitive, and diode components.
 \end{itemize}
-\vspace{0.35em}
+\vspace{0.25em}
 \entry{South Eastern Kenya University \quad$|$\quad ICT Technician}{Sep 2019 -- Feb 2021}
 \begin{itemize}
   \item Managed network infrastructure, computer labs, and CCTV systems; provided ICT training for
@@ -182,13 +182,14 @@ Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent securi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Technical Skills}
+{\renewcommand{\arraystretch}{1.25}
 \begin{tabular}{@{}p{0.20\textwidth}p{0.76\textwidth}@{}}
   \textbf{EDA \& Design} & Cadence Virtuoso, SPICE simulation, 45 nm GPDK45 \\
   \textbf{HDL}           & VHDL, Verilog, FPGA/CPLD \\
   \textbf{Programming}   & Python, MATLAB, Simulink \\
   \textbf{Networking}    & LTE/5G, FTTX, MPLS, RSSI/Wi-Fi fingerprinting \\
   \textbf{Hardware}      & Arduino, Raspberry Pi, NodeMCU \\
-\end{tabular}
+\end{tabular}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Awards \& Scholarships}
