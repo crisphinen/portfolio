@@ -15,9 +15,9 @@
 \titlespacing*{\section}{0pt}{0.8em}{0.4em}
 
 % \entry{left}{right}
-\newcommand{\entry}[2]{\filbreak\textbf{#1}\hfill #2\par}
+\newcommand{\entry}[2]{\textbf{#1}\hfill #2\par\nopagebreak}
 % \subentry{left}{right}
-\newcommand{\subentry}[2]{\textit{#1}\hfill \textit{#2}\par\vspace{0.15em}}
+\newcommand{\subentry}[2]{\textit{#1}\hfill \textit{#2}\par\nopagebreak\vspace{0.15em}\nopagebreak}
 
 \setlist[itemize]{leftmargin=1.2em,topsep=0.1em,itemsep=0.05em,parsep=0pt,label=\textbullet}
 
