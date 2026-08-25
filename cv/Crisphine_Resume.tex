@@ -88,12 +88,11 @@ Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent securi
   \item Showed that a false diagnosis injected over unauthenticated syslog, SNMP, or gNMI steers an
         LLM network-operations agent into harmful reconfiguration on every trial, against 5\% for the
         same payload written as a direct instruction.
-  \item Established that taint-based telemetry sanitization cannot hold: masking device identifiers
-        drops root-cause localization from 100\% to 0\%.
-  \item Built \textit{Ground-Truth Corroboration}, a deterministic verifier that admits a
-        remediation-bearing claim only when live device state confirms it, cutting
-        injection-attributable attack success to 0\% at roughly 0.18 s per check across six models on
-        an eight-router, multi-AS topology.
+  \item Ruled out taint-based sanitization for this setting: masking device identifiers drops
+        root-cause localization from 100\% to 0\%.
+  \item Built \textit{Ground-Truth Corroboration}, a verifier that passes a remediation-bearing claim
+        only when live device state confirms it. Injection-attributable attack success drops to 0\%,
+        at about 0.18 s per check, across six models on an eight-router multi-AS topology.
 \end{itemize}
 \vspace{0.25em}
 \entry{Interpretable IoT Intrusion Detection with Open-Set Robustness}{2025 -- Present}
@@ -101,12 +100,12 @@ Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent securi
 \begin{itemize}
   \item Jointly evaluated Concept Bottleneck Models (CBMs) and Neuro-Symbolic NIDS (NeSy-NIDS) on
         IoT traffic classification using the CTU-IoT-23 and CIC-IoT-2023 datasets.
-  \item Both architectures score open-set inputs by per-class Mahalanobis distance; neither incurs a
-        classification accuracy cost.
-  \item NeSy-NIDS reached an OOD AUROC of 0.906 on CTU-IoT-23 and a moderately regularized JointCBM
-        0.895, both at or above an unconstrained MLP baseline.
-  \item Identified the task-coupling OOD penalty on CIC-IoT-2023, where the degree of coupling between
-        concept learning and the classification task dictates open-set detectability.
+  \item Scored open-set inputs by per-class Mahalanobis distance in both architectures, at no cost to
+        classification accuracy.
+  \item Reached an OOD AUROC of 0.906 with NeSy-NIDS on CTU-IoT-23, and 0.895 with a moderately
+        regularized JointCBM, both at or above an unconstrained MLP baseline.
+  \item Found that on CIC-IoT-2023 how tightly concept learning is coupled to the classification task
+        decides open-set detectability, which the paper names the task-coupling OOD penalty.
 \end{itemize}
 \vspace{0.25em}
 \entry{Sneak Path Mitigation in a Crossbar-Based AI Accelerator}{2025}
