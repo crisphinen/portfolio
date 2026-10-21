@@ -45,8 +45,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Research Interests}
-Analog circuit design $\cdot$ Mixed-signal VLSI design $\cdot$ Digital VLSI design $\cdot$
-Programmable ASIC design $\cdot$ Semiconductor devices $\cdot$ Hardware and IoT security $\cdot$
+Mixed-signal VLSI design $\cdot$ Digital VLSI design $\cdot$
+Programmable ASIC design $\cdot$ Semiconductor devices $\cdot$ Hardware and IoT security $\cdot$ Network security $\cdot$
 Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent security
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,8 +69,8 @@ Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent securi
 \begin{itemize}
   \item N. C. Macharia, N. Weng. ``Corroborating Telemetry: Resilient LLM-Driven Network
         Operations at the Cyber Tactical Edge.'' Under review, 2026.
-  \item N. C. Macharia, N. Weng. ``Towards Trustworthy IoT Network Security: Concept Bottlenecks
-        and Differentiable Rules for Interpretable Open-Set Intrusion Detection.'' Under review, 2026.
+  \item N. C. Macharia, N. Weng. ``Towards Trustworthy IoT Network Security: Interpretable
+        Open-Set Intrusion Detection.'' Under review, 2026.
 \end{itemize}
 \vspace{0.3em}
 \textbf{Conference Papers}
@@ -95,17 +95,17 @@ Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent securi
         at about 0.18 s per check, across six models on an eight-router multi-AS topology.
 \end{itemize}
 \vspace{0.25em}
-\entry{Interpretable IoT Intrusion Detection with Open-Set Robustness}{2025 -- Present}
+\entry{Interpretable Open-Set IoT Intrusion Detection}{2025 -- Present}
 \subentry{Southern Illinois University Carbondale}{}
 \begin{itemize}
-  \item Jointly evaluated Concept Bottleneck Models (CBMs) and Neuro-Symbolic NIDS (NeSy-NIDS) on
-        IoT traffic classification using the CTU-IoT-23 and CIC-IoT-2023 datasets.
-  \item Scored open-set inputs by per-class Mahalanobis distance in both architectures, at no cost to
-        classification accuracy.
-  \item Reached an OOD AUROC of 0.906 with NeSy-NIDS on CTU-IoT-23, and 0.895 with a moderately
-        regularized JointCBM, both at or above an unconstrained MLP baseline.
-  \item Found that on CIC-IoT-2023 how tightly concept learning is coupled to the classification task
-        decides open-set detectability, which the paper names the task-coupling OOD penalty.
+  \item Compared Concept Bottleneck Models (CBMs) and Neuro-Symbolic NIDS (NeSy-NIDS) for IoT
+        traffic classification and open-set detection on CTU-IoT-23, CIC-IoT-2023 and TON\_IoT.
+  \item Showed that jointly trained CBMs and NeSy-NIDS classify known traffic as accurately as an
+        unconstrained MLP, with NeSy-NIDS giving the highest CTU-IoT-23 OOD AUROC (0.904 vs.\ 0.874).
+  \item Measured how far the explanations account for decisions: NeSy-NIDS agrees with its neural
+        head on 97--100\% of flows but with its rules on only 32--55\%.
+  \item Found that open-set detection depends on dataset, model and detection score, and released
+        code, data splits and pre-trained models.
 \end{itemize}
 \vspace{0.25em}
 \entry{Sneak Path Mitigation in a Crossbar-Based AI Accelerator}{2025}
@@ -141,8 +141,8 @@ Machine learning $\cdot$ LLM agents for hardware design $\cdot$ LLM agent securi
 \begin{itemize}
   \item ECE 508: Computer System Security (Fall 2026) --- assignment grading, homework support,
         and assisting with lectures
-  \item ECE 513: Digital VLSI Design (Spring 2026) --- lab instruction, grading, office hours
-  \item ECE 433: Networking (Fall 2025) --- assignment grading and student support
+  \item ECE 433: Network Systems Security (Spring 2026) --- lab instruction, grading, office hours
+  \item ECE 553: Computer Network System Architecture (Fall 2025) --- assignment grading and student support
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

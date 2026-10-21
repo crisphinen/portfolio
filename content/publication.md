@@ -8,7 +8,7 @@ title: "Publications"
 **N. C. Macharia**, N. Weng  
 *Under review · 2026*
 
-**Towards Trustworthy IoT Network Security: Concept Bottlenecks and Differentiable Rules for Interpretable Open-Set Intrusion Detection**  
+**Towards Trustworthy IoT Network Security: Interpretable Open-Set Intrusion Detection**  
 **N. C. Macharia**, N. Weng  
 *Under review · 2026*
 

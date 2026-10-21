@@ -1,19 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ngari Crisphine</title><link>https://crisphinen.github.io/portfolio/</link><description>Recent content on Ngari Crisphine</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://crisphinen.github.io/portfolio/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://crisphinen.github.io/portfolio/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://crisphinen.github.io/portfolio/about/</guid><description>I am an MSc student in the Department of Electrical and Computer Engineering at Southern Illinois University Carbondale, advised by Prof. Ning Weng. I work on circuit design and on the security of the systems those circuits run. Most of my time goes to analog and mixed-signal VLSI, digital VLSI, and programmable ASICs. More recently I have been working on hardware security, machine learning, and what happens when LLM agents are given control of real systems.</description></item><item><title>Publications</title><link>https://crisphinen.github.io/portfolio/publication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://crisphinen.github.io/portfolio/publication/</guid><description>Under Review Corroborating Telemetry: Resilient LLM-Driven Network Operations at the Cyber Tactical Edge
-N. C. Macharia, N. Weng
-Under review · 2026
-Towards Trustworthy IoT Network Security: Concept Bottlenecks and Differentiable Rules for Interpretable Open-Set Intrusion Detection
-N. C. Macharia, N. Weng
-Under review · 2026
-2024 A Framework for Real-Time Localization in Constrained Devices Connected to the IoT
-E. Asogwa, N. C. Macharia, A. Bajpai, N. Telagam
-2024 IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT)</description></item><item><title>Research</title><link>https://crisphinen.github.io/portfolio/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://crisphinen.github.io/portfolio/research/</guid><description>I work on circuit design and on the security of the systems those circuits run. Most of my time goes to analog and mixed-signal VLSI, digital VLSI, and programmable ASICs. More recently I have been working on hardware security, machine learning, and what happens when LLM agents are given control of real systems.
-Research interests: Mixed-signal VLSI design · Digital VLSI design · Programmable ASIC design · Semiconductor devices · Hardware and IoT security · Networking security· Machine learning · LLM agents for hardware design · LLM agent security</description></item><item><title>Teaching</title><link>https://crisphinen.github.io/portfolio/teaching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://crisphinen.github.io/portfolio/teaching/</guid><description>I hold a Graduate Assistantship in the Department of Electrical and Computer Engineering at Southern Illinois University Carbondale.
-Teaching Assistant ECE 553 — Computer Network system Architecure (Fall 2025)
-Southern Illinois University Carbondale
-Assignment grading and student support
-ECE 433 — Network systems security (Spring 2026)
-Southern Illinois University Carbondale
-Lab instruction, grading, and office hours
-ECE 508 — Computer System Security (Fall 2026)
-Southern Illinois University Carbondale
-Assignment grading, homework support, and assisting with lectures</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ngari Crisphine</title><link>https://crisphinen.github.io/portfolio/</link><description>Recent content on Ngari Crisphine</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://crisphinen.github.io/portfolio/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://crisphinen.github.io/portfolio/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://crisphinen.github.io/portfolio/about/</guid><description>&lt;p&gt;I am an MSc student in the Department of Electrical and Computer Engineering at Southern Illinois University Carbondale, advised by &lt;a href="https://scholar.google.com/citations?user=G8ol4PwAAAAJ&amp;amp;hl=en" target="_blank" rel="noopener noreferrer"&gt;Prof. Ning Weng&lt;/a&gt;. I work on circuit design and on the security of the systems those circuits run. Most of my time goes to analog and mixed-signal VLSI, digital VLSI, and programmable ASICs. More recently I have been working on hardware security, machine learning, and what happens when LLM agents are given control of real systems.&lt;/p&gt;</description></item><item><title>Publications</title><link>https://crisphinen.github.io/portfolio/publication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://crisphinen.github.io/portfolio/publication/</guid><description>&lt;h3 id="under-review"&gt;Under Review&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Corroborating Telemetry: Resilient LLM-Driven Network Operations at the Cyber Tactical Edge&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;N. C. Macharia&lt;/strong&gt;, N. Weng&lt;br&gt;
+&lt;em&gt;Under review · 2026&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Towards Trustworthy IoT Network Security: Interpretable Open-Set Intrusion Detection&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;N. C. Macharia&lt;/strong&gt;, N. Weng&lt;br&gt;
+&lt;em&gt;Under review · 2026&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="2024"&gt;2024&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;A Framework for Real-Time Localization in Constrained Devices Connected to the IoT&lt;/strong&gt;&lt;br&gt;
+E. Asogwa, &lt;strong&gt;N. C. Macharia&lt;/strong&gt;, A. Bajpai, N. Telagam&lt;br&gt;
+&lt;em&gt;2024 IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT)&lt;/em&gt;&lt;br&gt;
+Bangalore, India · July 2024&lt;br&gt;
+&lt;a href="https://ieeexplore.ieee.org/document/10677241" target="_blank" rel="noopener noreferrer"&gt;Paper&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Research</title><link>https://crisphinen.github.io/portfolio/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://crisphinen.github.io/portfolio/research/</guid><description>&lt;p&gt;I work on circuit design and on the security of the systems those circuits run. Most of my time goes to analog and mixed-signal VLSI, digital VLSI, and programmable ASICs. More recently I have been working on hardware security, machine learning, and what happens when LLM agents are given control of real systems.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Research interests:&lt;/strong&gt; Mixed-signal VLSI design · Digital VLSI design · Programmable ASIC design · Semiconductor devices · Hardware and IoT security · Network security · Machine learning · LLM agents for hardware design · LLM agent security&lt;/p&gt;</description></item><item><title>Teaching</title><link>https://crisphinen.github.io/portfolio/teaching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://crisphinen.github.io/portfolio/teaching/</guid><description>&lt;p&gt;I hold a &lt;strong&gt;Graduate Assistantship&lt;/strong&gt; in the Department of Electrical and Computer Engineering at Southern Illinois University Carbondale.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="teaching-assistant"&gt;Teaching Assistant&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;ECE 553 — Computer Network System Architecture&lt;/strong&gt; &lt;em&gt;(Fall 2025)&lt;/em&gt;&lt;br&gt;
+Southern Illinois University Carbondale&lt;br&gt;
+Assignment grading and student support&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ECE 433 — Network Systems Security&lt;/strong&gt; &lt;em&gt;(Spring 2026)&lt;/em&gt;&lt;br&gt;
+Southern Illinois University Carbondale&lt;br&gt;
+Lab instruction, grading, and office hours&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ECE 508 — Computer System Security&lt;/strong&gt; &lt;em&gt;(Fall 2026)&lt;/em&gt;&lt;br&gt;
+Southern Illinois University Carbondale&lt;br&gt;
+Assignment grading, homework support, and assisting with lectures&lt;/p&gt;</description></item></channel></rss>

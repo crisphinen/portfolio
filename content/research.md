@@ -4,7 +4,7 @@ title: "Research"
 
 I work on circuit design and on the security of the systems those circuits run. Most of my time goes to analog and mixed-signal VLSI, digital VLSI, and programmable ASICs. More recently I have been working on hardware security, machine learning, and what happens when LLM agents are given control of real systems.
 
-**Research interests:** Analog circuit design · Mixed-signal VLSI design · Digital VLSI design · Programmable ASIC design · Semiconductor devices · Hardware and IoT security · Machine learning · LLM agents for hardware design · LLM agent security
+**Research interests:** Mixed-signal VLSI design · Digital VLSI design · Programmable ASIC design · Semiconductor devices · Hardware and IoT security · Network security · Machine learning · LLM agents for hardware design · LLM agent security
 
 ---
 
@@ -15,9 +15,9 @@ I work on circuit design and on the security of the systems those circuits run. 
 An LLM agent that reads live telemetry and reconfigures devices is only as reliable as the telemetry it reads. Feed it a false diagnosis over unauthenticated syslog, SNMP, or gNMI and it acts on it every time, against 5% for the same payload written as a direct instruction. Sanitizing the telemetry does not help: masking device identifiers drops root-cause localization from 100% to 0%. Ground-Truth Corroboration checks each remediation-bearing claim against live device state before the agent sees it, which cuts injection-attributable attack success to 0% at about 0.18 s per check. *(Under review)*
 {{< /project-figure >}}
 
-### Interpretable IoT Intrusion Detection with Open-Set Robustness
-{{< project-figure src="img/img-nids.png" alt="Overview of the CBM and NeSy-NIDS architectures" caption="A concept bottleneck with test-time intervention and a differentiable rule bank with a neural fallback, both scored for OOD by Mahalanobis distance." >}}
-Two things go wrong with ML-based intrusion detection: you cannot tell why traffic was flagged, and attacks absent from training go unrecognized. The paper compares two architectures on IoT traffic. Concept Bottleneck Models route predictions through human-defined concepts that an operator can override at test time; Neuro-Symbolic NIDS turns expert signatures into differentiable threshold rules that binarize exactly, with a neural head as fallback. Neither costs classification accuracy. On CTU-IoT-23, NeSy-NIDS reaches an OOD AUROC of 0.906 and a moderately regularized JointCBM 0.895, both at or above an unconstrained MLP. On CIC-IoT-2023 the ranking flips: how tightly concept learning is coupled to the classification task decides OOD performance, which costs NeSy-NIDS and leaves JointCBM ahead. *(Under review)*
+### Interpretable Open-Set IoT Intrusion Detection
+{{< project-figure src="img/img-nids.png" alt="Overview of the CBM and NeSy-NIDS architectures" caption="A concept bottleneck with test-time intervention and a learned-threshold rule bank with a neural fallback, both scored for OOD by Mahalanobis distance." >}}
+Two things go wrong with ML-based intrusion detection: you cannot tell why traffic was flagged, and attacks absent from training pass as known ones. The paper tests whether interpretable models solve both. It compares Concept Bottleneck Models, which classify through human-defined concepts, with NeSy-NIDS, which learns thresholds for expert-written rules alongside a neural network, on CTU-IoT-23, CIC-IoT-2023 and TON_IoT. The jointly trained CBMs and NeSy-NIDS classify known traffic as accurately as an unconstrained network, and NeSy-NIDS gives the highest OOD AUROC on CTU-IoT-23 (0.904, against 0.874 for the MLP). The explanations only partly account for the decisions: NeSy-NIDS's predictions agree with its neural part on 97–100% of flows but with its rules on only 32–55%. Detecting unfamiliar attacks depends on the dataset, the model and the detection score, and at a usable threshold the models miss nearly all flows of several attack families. Interpretable detectors should be evaluated across several training runs, models and datasets. *(Under review)* [Code](https://github.com/crisphinen/interpretable-nids)
 {{< /project-figure >}}
 
 ---
